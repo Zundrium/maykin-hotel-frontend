@@ -14,7 +14,9 @@
 
     onMount(async () => {
         try {
-            const res = await fetch("http://localhost:8000/cities?format=json");
+            const res = await fetch(
+                "http://localhost:8000/cities/?format=json",
+            );
             if (res.ok) {
                 cities = await res.json();
             } else {
@@ -53,7 +55,7 @@
         selectedHotel = null; // Reset hotel selection
         try {
             const res = await fetch(
-                `http://localhost:8000/hotels?format=json&city=${cityId}`,
+                `http://localhost:8000/hotels/?format=json&city=${cityId}`,
             );
             if (res.ok) {
                 hotels = await res.json();

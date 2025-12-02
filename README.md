@@ -14,8 +14,8 @@ A beautiful and intuitive hotel search interface built with SvelteKit and Tailwi
 ### Prerequisites
 
 Ensure your backend API is running at `http://localhost:8000` with the following endpoints:
-- `GET /cities?format=json`
-- `GET /hotels?format=json&city={cityId}`
+- `GET /cities/?format=json`
+- `GET /hotels/?format=json&city={cityId}`
 
 ### Installation
 
