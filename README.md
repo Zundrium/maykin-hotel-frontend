@@ -1,38 +1,43 @@
-# sv
+# 🏨 Hotel Finder
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A beautiful and intuitive hotel search interface built with SvelteKit and TailwindCSS.
 
-## Creating a project
+## ✨ Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Smart City Search** – Find cities with an elegant searchable dropdown
+- **Dynamic Hotel Filtering** – Hotels automatically populate based on selected city
+- **Zone Information** – Hotels display with their zone for easy identification
+- **Modern UI** – Sleek design with TailwindCSS and custom styling
 
-```sh
-# create a new project in the current directory
-npx sv create
+## 🚀 Getting Started
 
-# create a new project in my-app
-npx sv create my-app
-```
+### Prerequisites
 
-## Developing
+Ensure your backend API is running at `http://localhost:8000` with the following endpoints:
+- `GET /cities?format=json`
+- `GET /hotels?format=json&city={cityId}`
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Installation
 
-```sh
+```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Visit `http://localhost:5173` to see the app in action.
 
-To create a production version of your app:
+## 🛠️ Built With
 
-```sh
+- [SvelteKit](https://kit.svelte.dev/) – Web framework
+- [TailwindCSS](https://tailwindcss.com/) – Styling
+- [svelte-select](https://github.com/rob-balfre/svelte-select) – Enhanced select components
+
+## 📦 Building for Production
+
+```bash
 npm run build
+npm run preview
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
